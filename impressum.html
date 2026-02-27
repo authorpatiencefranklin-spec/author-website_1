@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impressum — Your Pen Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Impressum</h1>
+
+    <div class="card">
+      <p><strong>Angaben gemäß § 5 DDG</strong></p>
+      <p>
+        <!-- Real name required here in many cases -->
+        Vorname Nachname<br />
+        c/o Impressum-Service (falls genutzt)<br />
+        Straße Hausnummer<br />
+        PLZ Ort<br />
+        Deutschland
+      </p>
+
+      <p><strong>Kontakt</strong></p>
+      <p>
+        E-Mail: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a>
+      </p>
+
+      <p class="small">
+        Tätig unter dem Pseudonym „Your Pen Name“ (optional Hinweis).
+      </p>
+    </div>
+
+    <p class="small">
+      Hinweis: Je nach Setup brauchst du ggf. zusätzlich eine Datenschutzerklärung (z. B. bei Tracking, eingebetteten Widgets, Newsletter-Formular).
+    </p>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div class="small">© <span id="year"></span> Your Pen Name</div>
+      <div>
+        <a href="impressum.html">Impressum</a>
+        <span class="small"> · </span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

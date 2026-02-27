@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Pen Name — Author</title>
+  <meta name="description" content="Official author website of Your Pen Name." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Your Pen Name</h1>
+      <p class="small">Author of [Genre / Tagline].</p>
+    </section>
+
+    <section class="card">
+      <h2>Latest Release</h2>
+      <p><strong>Book Title</strong> — one sentence hook.</p>
+      <p>
+        <a href="books.html">See all books →</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Newsletter (optional)</h2>
+      <p>Get updates on new releases and bonus content.</p>
+      <p class="small">Add your newsletter link later (MailerLite, etc.).</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div class="small">© <span id="year"></span> Your Pen Name</div>
+      <div>
+        <a href="impressum.html">Impressum</a>
+        <span class="small"> · </span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
