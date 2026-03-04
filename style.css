@@ -175,6 +175,16 @@ button:hover {
   background: #9d174d;
 }
 
+.Patience Franklin_s Video_ {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 footer {
   border-top: 1px solid #e6e6e6;
   padding: 18px 0;
