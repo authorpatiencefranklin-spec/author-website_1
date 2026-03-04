@@ -134,21 +134,18 @@ main {
   align-items: center;
 }
 
-.newsletter-form input {
-  flex: 1;
-  min-width: 220px;
-  padding: 12px 14px;
-  border-radius: 999px;
-  border: 1px solid rgba(0,0,0,0.12);
-  outline: none;
-  font-size: 1rem;
-  background: #fff;
+.newsletter-form input[type="email"] {
+  width: 100% !important;
+  max-width: 700px;
+  padding: 18px 28px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(0,0,0,0.08) !important;
+  background: #f9f9f9 !important;
+  font-size: 1.1rem !important;
 }
 
-.newsletter-form input:focus {
-  border-color: #be185d;
-  box-shadow: 0 0 0 4px rgba(190, 24, 93, 0.12);
-}
+
+
 
 .newsletter-form button {
   padding: 12px 22px;
