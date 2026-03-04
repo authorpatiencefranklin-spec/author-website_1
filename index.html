@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <img src="images/PatienceF_logo.png" alt="Patience Franklin Logo">
+    <img src="images/PatienceF_logo.png" alt="Logo" class="logo" width="1000" height="700" />
            <p class="tagline">Contemporary Romance Author</p>
   </header>
 
@@ -43,11 +43,25 @@
   <h2>Join My Newsletter</h2>
   <p>Get new releases, bonus scenes, and exclusive updates.</p>
 
-  <form class="newsletter-form"  action= "https://assets.mlcdn.com/fonts.css?version=1772539"  method="post">
+  <form class="newsletter-form"  action= "https://assets.mailerlite.com/jsonp/2152736/forms/181019601069410233/subscribe"  method="post"></form>
     <label class="sr-only" for="email">E-Mail</label>
-    <input id="email" name="email" type="email" placeholder="deine@email.de" required>
-    <button type="submit">Subscribe</button>
-  </form>
+
+  <input type="email"
+         name="fields[email]"
+         placeholder="Email"
+         required>
+
+  <input type="hidden" name="ml-submit" value="1">
+  <input type="hidden" name="anticsrf" value="true">
+
+  <input type="hidden"
+         name="redirect"
+         value="https://patiencefranklin.com/thanks.html"> 
+
+  <button type="submit">Subscribe</button>
+
+</form>
+  
 
    <p class="small-note">
     No spam. Unsubscribe anytime.
