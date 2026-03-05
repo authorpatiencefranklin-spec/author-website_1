@@ -24,10 +24,8 @@ h1::after {
   margin-top: 15px;
 }
 
-.logo img {
-  height: 40px;
-  width: auto;
-  display: block;
+header {
+  text-align: center;   /* zentriert alles im Header */
 }
 
 .hero {
@@ -36,14 +34,16 @@ h1::after {
 }
 
 .hero img {
-  width: 60%;
-  max-width: 500px; /* absolute Obergrenze */
+  display: block;       /* wichtig für sauberes Zentrieren */
+  margin: 0 auto;       /* zentriert horizontal */
+  max-width: 800px;     /* kontrollierte Größe */
+  width: 150%;
   height: auto;
 }
 
 
 .tagline {
-  margin-top: 30px;
+  margin-top: 0px;
   font-size: 1.6rem;
   letter-spacing: 2px;
   opacity: 0.7;
@@ -184,6 +184,38 @@ button:hover {
   object-fit: cover;
   z-index: -1;
 }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+
+.contact-link {
+  font-size: 1.05rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.contact-link:hover {
+  border-bottom-color: rgba(0,0,0,0.5);
+}
+
+.social-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 footer {
   border-top: 1px solid #e6e6e6;

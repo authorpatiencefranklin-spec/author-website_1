@@ -20,12 +20,21 @@
     </header>
             
 
-    <footer>
-      <div class="container footer-row">
-        <div class="small">© <span id="year"></span> Patience Franklin</div>
-          <div class="footer-links"><a href="impressum.html">Impressum</a>
-          <span class="small"> · </span>
-          <a href="contact.html">Contact</a>
-        </div>
+   <footer>
+    <div class="container footer-row">
+      <div class="small">© <span id="year"></span> Patience Franklin</div>
+        <div class="footer-links"><a href="impressum.html">Imprint</a>
+        <span class="small"> · </span>
+        <a href="contact.html">Contact</a>
+        <span class="small"> · </span>
+        <a href="datenschutz.html">Privacy Policy</a>
+        
       </div>
-    </footer>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
