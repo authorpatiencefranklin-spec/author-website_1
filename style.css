@@ -41,6 +41,22 @@ header {
   height: auto;
 }
 
+.logo-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: logoReveal 1.2s ease-out forwards;
+}
+
+@keyframes logoReveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .tagline {
   margin-top: 0px;
