@@ -137,7 +137,7 @@ nav {
 }
 
 /* Striche zwischen den Menüpunkten */
-.nav > li:not(:last-child)::after {
+/*.nav > li:not(:last-child)::after {
   content: "|";
   margin-left: 14px;
 }
