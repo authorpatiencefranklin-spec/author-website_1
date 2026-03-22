@@ -186,6 +186,15 @@ main {
   margin: 14px 0;
 }
 
+.card-img {
+  width: 100%;        /* fills the card width */
+  height: 100%;       /* fills the card height */
+  object-fit: cover;  /* keeps aspect ratio, crops nicely */
+  display: block;   
+  border-radius: 14px;
+  border: 1px solid #8d6373;  /* removes small gaps */
+}
+
 /* Screenreader-only (Label bleibt für Accessibility) */
 .sr-only {
   position: absolute;
