@@ -278,6 +278,11 @@ button {
   cursor: pointer;
   transition: 0.3s;
 }
+button-link {
+  font-size: 1.05rem;
+  text-decoration:none;
+  color: #fcfcfc;
+}
 
 button:hover {
   background: #9d174d;
