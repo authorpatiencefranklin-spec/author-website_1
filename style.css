@@ -362,6 +362,147 @@ nav {
   color: rgba(253,247,249,0.55);
 }
 
+/* ── NEWSLETTER LANDING PAGE ───────────────────────────── */
+
+.landing-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.landing-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.7);
+  border: 0.5px solid var(--border-mid);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(46,34,40,0.08);
+}
+
+/* LEFT */
+.landing-copy {
+  padding: 60px 50px;
+}
+
+.landing-logo {
+  max-width: 200px;
+  margin-bottom: 24px;
+}
+
+.landing-copy h1 em {
+  color: var(--brand);
+  font-style: italic;
+}
+
+.landing-copy-main {
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+
+.benefits {
+  margin-bottom: 26px;
+}
+
+.benefit {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.benefit-mark {
+  background: var(--brand-fill);
+  color: var(--brand);
+  border-radius: 999px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+/* RIGHT */
+.signup-card {
+  background: var(--brand);
+  color: #fdf7f9;
+  padding: 60px 40px;
+}
+
+.signup-card h2 {
+  color: #fdf7f9;
+}
+
+.signup-card .section-rule {
+  background: rgba(253,247,249,0.3);
+}
+
+.signup-card p {
+  color: rgba(253,247,249,0.7);
+}
+
+/* FORM */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.newsletter-form input {
+  padding: 14px;
+  border: 0.5px solid rgba(253,247,249,0.3);
+  background: transparent;
+  color: #fdf7f9;
+  font-family: var(--sans);
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(253,247,249,0.5);
+}
+
+.newsletter-note {
+  font-size: 0.72rem;
+  color: rgba(253,247,249,0.5);
+}
+
+.mini-bonus {
+  margin-top: 20px;
+  border-top: 0.5px solid rgba(253,247,249,0.2);
+  padding-top: 12px;
+}
+
+.bottom-note {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: var(--brand-muted);
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .landing-card {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-copy,
+  .signup-card {
+    padding: 40px 24px;
+    text-align: center;
+  }
+
+  .landing-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .benefit {
+    justify-content: center;
+  }
+}
 /* ── NEWSLETTER ──────────────────────────────────────────── */
 .newsletter-section {
   background: var(--brand);

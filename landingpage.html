@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Letters from My Desk · Patience Franklin</title>
+  <meta name="description" content="Subscribe to Patience Franklin’s newsletter." />
+
+  <!-- MAIN SITE CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- NEWSLETTER PAGE CSS -->
+  <link rel="stylesheet" href="newsletter.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+<main class="landing-wrap">
+  <div class="container">
+    <section class="landing-card">
+
+      <!-- LEFT SIDE -->
+      <div class="landing-copy">
+        <img src="images/Logo_Update.png" alt="Patience Franklin" class="landing-logo">
+
+        <span class="eyebrow">Author Newsletter</span>
+        <h1>Letters from my desk,<br><em>straight to yours</em></h1>
+        <div class="section-rule"></div>
+
+        <p class="tagline">
+          A soft place for readers who love bittersweet romance and stories that linger.
+        </p>
+
+        <p class="landing-copy-main">
+          Subscribe for new releases, bonus scenes, behind-the-scenes moments, and the occasional love letter about books.
+        </p>
+
+        <div class="benefits">
+          <div class="benefit">
+            <span class="benefit-mark">✦</span>
+            <span>Early access to new releases & updates</span>
+          </div>
+          <div class="benefit">
+            <span class="benefit-mark">✦</span>
+            <span>Exclusive bonus scenes & snippets</span>
+          </div>
+          <div class="benefit">
+            <span class="benefit-mark">✦</span>
+            <span>Cozy, bookish letters from my writing life</span>
+          </div>
+        </div>
+
+        <a href="#signup" class="btn btn-ghost">Join the newsletter</a>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="signup-card" id="signup">
+        <span class="eyebrow">Stay in touch</span>
+        <h2>Subscribe</h2>
+        <div class="section-rule"></div>
+
+        <p>
+          Join a quiet corner of readers who want more of the story behind the story.
+        </p>
+
+        <form
+          class="newsletter-form"
+          action="https://assets.mailerlite.com/jsonp/2152736/forms/181019601069410233/subscribe"
+          method="post"
+        >
+          <input type="text" name="fields[name]" placeholder="First name" />
+          <input type="email" name="fields[email]" placeholder="your@email.com" required />
+
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <input type="hidden" name="redirect" value="https://patiencefranklin.com/thanks.html">
+
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+
+        <p class="newsletter-note">
+          No spam. Unsubscribe anytime.
+          <a href="datenschutz.html">Privacy Policy</a>
+        </p>
+
+        <div class="mini-bonus">
+          <strong>Optional bonus</strong>
+          <span>Add a freebie here (bonus scene, excerpt, etc.)</span>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="bottom-note">
+      © <span id="year"></span> Patience Franklin
+    </div>
+  </div>
+</main>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+  document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+
+    fetch(this.action, {
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors'
+    }).then(() => {
+      window.location.href = "https://patiencefranklin.com/thanks.html";
+    });
+  });
+</script>
+
+</body>
+</html>
