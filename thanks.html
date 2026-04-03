@@ -1,24 +1,92 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Thank You</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You ❀ Patience Franklin</title>
+  <meta name="description" content="Thank you for subscribing to Patience Franklin's newsletter." />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
 </head>
 <body>
 
- <div class="hero">
-    <img src="images/Logo_neu.png" alt="Patience Franklin logo: a minimalist line drawing of a rabbit shaping the P of the the text Patience Franklin in elegant script"/>
-   
-    </div>
+  <!-- ── NAVIGATION ── -->
+  <header>
+    <nav>
+      <a href="index.html" class="nav-brand">
+        <img src="images/Logo_Update.png" alt="Patience Franklin" />
+      </a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#">Cookies</a>
+          <ul class="submenu">
+            <li><a href="cookies.html">All Cookies</a></li>
+            <li><a href="/recipes/oreo3B_recipe.html">B-B-Cookie</a></li>
+            <li><a href="/recipes/MandM_recipe.html">M &amp; M-Cookie</a></li>
+            <li><a href="/recipes/bittersuprise_recipe.html">Bittersurprise Cookie</a></li>
+            <li><a href="/recipes/snickerdoodle_recipe.html">Snickerdoodle Cookie</a></li>
+            <li><a href="/recipes/peanutbutter_recipe.html">Peanut Butter Cookie</a></li>
+            <li><a href="/recipes/redvelvetcookie_recipe.html">Red Velvet Cookie</a></li>
+            <li><a href="/recipes/darkcookie_recipe.html">Triple Chocolate Cookie</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
 
-          
-  <main class="container">
-    <h1>Thank you for subscribing! ✨</h1>
-    <p>Please check your email to confirm your subscription.</p>
-    
-  <button class="button"><a href="index.html">Back to homepage</a></button>
+    <!-- ── THANK YOU HERO ── -->
+    <section class="hero thanks-hero">
+      <img
+        src="images/Logo_Update.png"
+        alt="Patience Franklin"
+        class="hero-logo logo-reveal"
+      />
+      <span class="eyebrow">You're in</span>
+      <h1>Thank you for<br><em>subscribing</em></h1>
+      <div class="section-rule section-rule--center"></div>
+      <p class="tagline">Please check your inbox to confirm your subscription — then the letters begin.</p>
+      <div class="hero-actions">
+        <a href="index.html" class="btn btn-primary">Back to homepage</a>
+        <a href="books.html" class="btn btn-ghost">Explore my books</a>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Patience Franklin</span>
+      <div class="footer-links">
+        <a href="impressum.html">Imprint</a>
+        <span class="footer-sep">·</span>
+        <a href="contact.html">Contact</a>
+        <span class="footer-sep">·</span>
+        <a href="datenschutz.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>

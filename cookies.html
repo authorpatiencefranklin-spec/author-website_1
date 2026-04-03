@@ -4,142 +4,166 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cookies 🍪 Patience Franklin</title>
+  <meta name="description" content="Cookie recipes inspired by the world of Patience Franklin's books." />
+
   <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  >
 </head>
 <body>
- <header>
 
-  
-
-
-    <div class="container">
+  <!-- ── NAVIGATION ── -->
+  <header>
     <nav>
-  <ul class="nav">
-    <li><a href="index.html">Home</a></li>
-     <span class="small"> | </span>
-    <li><a href="books.html">Books</a></li>
-     <span class="small"> | </span>
-    <li><a href="about.html">About</a></li>
-     <span class="small"> | </span>
+      <a href="index.html" class="nav-brand">
+        <img src="images/Logo_Update.png" alt="Patience Franklin" />
+      </a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" aria-current="page">Cookies</a>
+          <ul class="submenu">
+            <li><a href="cookies.html">All Cookies</a></li>
+            <li><a href="/recipes/oreo3B_recipe.html">B-B-Cookie</a></li>
+            <li><a href="/recipes/MandM_recipe.html">M &amp; M-Cookie</a></li>
+            <li><a href="/recipes/bittersuprise_recipe.html">Bittersurprise Cookie</a></li>
+            <li><a href="/recipes/snickerdoodle_recipe.html">Snickerdoodle Cookie</a></li>
+            <li><a href="/recipes/peanutbutter_recipe.html">Peanut Butter Cookie</a></li>
+            <li><a href="/recipes/redvelvetcookie_recipe.html">Red Velvet Cookie</a></li>
+            <li><a href="/recipes/darkcookie_recipe.html">Triple Chocolate Cookie</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <li class="dropdown">
-      <a href="#">Cookies</a>
-      <ul class="submenu">
-       <li><a href="https://patiencefranklin.com/cookies.html">All Cookies</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/oreo3B_recipe.html">B-B-Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/MandM_recipe.html">M & M-Cookie</a></li>
-        <li> <a href="https://patiencefranklin.com/recipes/bittersuprise_recipe.html">Bittersuprise Cookie</a> </li>
-        <li><a href="https://patiencefranklin.com/recipes/snickerdoodle_recipe.html">Snickerdoodle Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/peanutbutter_recipe.html">Peanut Butter Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/redvelvetcookie_recipe.html">Red Velvet Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/darkcookie_recipe.html">Triple Chocolate Cookie</a></li>
-    </li>
-    <span class="small"> | </span>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <main>
 
-    </div>
-  <main class="container">
-    <h1>Cookies</h1>
-
- <div class="cookie-reveal">
-    <section class="card">
-        <img src = "images/B-B_Cookie.png" alt = "Biscuit Bitch Cookie" class = "card-img"/>
-      <h2>3-B-Cookie Recipe</h2>
-      <p><strong>3-B</strong> — An ultra sweet cookie recipe representing our favorite girlies.</p>
-      <p>
-       <button class="button"><a class="button-link" href="/recipes/oreo3B_recipe.html">See the recipe </a></button>
-      </p>
-    </section>
- </div>
-
-<div class="cookie-reveal">
-    <section class="card">
-        <img src = "/images/Snickerdoodle Cookies.jpg" alt = "Snickerdoodle Cookies" class = "card-img"/>
-      <h2>'Simple Man' Cookies</h2>
-      <p><strong>Snickerdoodle</strong> — An all time classic, and almost certainly your childhood favorite.</p>
-      <p>
-       <button class="button"><a class="button-link" href="/recipes/snickerdoodle_recipe.html">See the recipe </a></button>
-      </p>
-    </section>
-</div>
-
-
-<div class ="cookie-reveal">
-    <section class="card">
-        <img src = "/images/Peanut Butter Cookies.jpg" alt = "Peanut Butter Cookies" class="card-img" />
-      <h2>'Nutty Man' Cookies</h2>
-      <p><strong>Peanutbutter Cookie</strong> — An all time classic, and almost certainly your childhood favorite.</p>
-      <p>
-       <button class="button"><a class="button-link" href="/recipes/peanutbutter_recipe.html">See the recipe </a></button>
-      </p>
+    <!-- ── HERO ── -->
+    <section class="hero hero--small">
+      <span class="eyebrow">Recipes</span>
+      <h1>The <em>Cookie</em> Collection</h1>
+      <div class="section-rule section-rule--center"></div>
+      <p class="tagline">Every book has a cookie. Every cookie has a story.</p>
     </section>
 
-</div>
+    <!-- ── COOKIE GRID ── -->
+    <section class="cookies-section">
+      <div class="container">
+        <div class="cookies-grid">
 
+          <article class="cookie-card cookie-reveal">
+            <div class="cookie-card-img">
+              <img src="#" alt="B-B Cookie" />
+            </div>
+            <div class="cookie-card-body">
+              <span class="eyebrow">Ultra Sweet</span>
+              <h3>B-B Cookie</h3>
+              <p>An ultra sweet cookie recipe representing our favorite girlies.</p>
+              <a href="/recipes/oreo3B_recipe.html" class="link-arrow">See the recipe</a>
+            </div>
+          </article>
 
-<div class="cookie-reveal">
-    <section class="card">
-        <img src = "/images/MandM Cookies.jpg" alt = "MandM Cookies" class="card-img" />
-      <h2>'M & M' Cookies</h2>
-      <p><strong>M & M Cookie</strong> — Another classic, a different rendition. A Macademia and Mint Cookie</p>
-      <p>
-      <button class="button"><a class="button-link" href="/recipes/mandm_recipe.html">See the recipe →</a></button>
-      </p>
+          <article class="cookie-card cookie-reveal">
+            <div class="cookie-card-img">
+              <img src="/images/Snickerdoodle Cookies.jpg" alt="Snickerdoodle Cookies" />
+            </div>
+            <div class="cookie-card-body">
+              <span class="eyebrow">Classic</span>
+              <h3>'Simple Man' Cookies</h3>
+              <p>A Snickerdoodle — an all-time classic, and almost certainly your childhood favorite.</p>
+              <a href="/recipes/snickerdoodle_recipe.html" class="link-arrow">See the recipe</a>
+            </div>
+          </article>
+
+          <article class="cookie-card cookie-reveal">
+            <div class="cookie-card-img">
+              <img src="/images/Peanut Butter Cookies.jpg" alt="Peanut Butter Cookies" />
+            </div>
+            <div class="cookie-card-body">
+              <span class="eyebrow">Nutty</span>
+              <h3>'Nutty Man' Cookies</h3>
+              <p>A Peanut Butter Cookie — rich, nostalgic, and deeply satisfying.</p>
+              <a href="/recipes/peanutbutter_recipe.html" class="link-arrow">See the recipe</a>
+            </div>
+          </article>
+
+          <article class="cookie-card cookie-reveal">
+            <div class="cookie-card-img">
+              <img src="/images/MandM Cookies.jpg" alt="M&M Cookies" />
+            </div>
+            <div class="cookie-card-body">
+              <span class="eyebrow">A Different Rendition</span>
+              <h3>M &amp; M Cookies</h3>
+              <p>Another classic reimagined — a Macadamia and Mint Cookie.</p>
+              <a href="/recipes/mandm_recipe.html" class="link-arrow">See the recipe</a>
+            </div>
+          </article>
+
+          <article class="cookie-card cookie-reveal">
+            <div class="cookie-card-img">
+              <img src="/images/Redvelvet Cookies.jpg" alt="Red Velvet Cookies" />
+            </div>
+            <div class="cookie-card-body">
+              <span class="eyebrow">Elegant</span>
+              <h3>'Red Velvet' Cookies</h3>
+              <p>A fashionable and elegant choice — just like [Y/N].</p>
+              <a href="/recipes/redvelvetcookie_recipe.html" class="link-arrow">See the recipe</a>
+            </div>
+          </article>
+
+          <article class="cookie-card cookie-reveal">
+            <div class="cookie-card-img">
+              <img src="/images/Dark_ Cookies.jpg" alt="Triple Chocolate Cookies" />
+            </div>
+            <div class="cookie-card-body">
+              <span class="eyebrow">Dark &amp; Rich</span>
+              <h3>'Dark and Rich' Cookies</h3>
+              <p>A Triple Chocolate Cookie — rich, deep, and intensely flavored.</p>
+              <a href="/recipes/darkcookie_recipe.html" class="link-arrow">See the recipe</a>
+            </div>
+          </article>
+
+          <article class="cookie-card cookie-reveal">
+            <div class="cookie-card-img">
+              <img src="/images/bittersuprise_cookie.jpg" alt="Bittersurprise Cookie" />
+            </div>
+            <div class="cookie-card-body">
+              <span class="eyebrow">Surprising</span>
+              <h3>'Bittersurprise' Cookies</h3>
+              <p>Ordinary at first glance — surprising within the very first bite.</p>
+              <a href="/recipes/bittersuprise_recipe.html" class="link-arrow">See the recipe</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
-</div>
 
-
-
-<div class="cookie-reveal">
-       <section class="card">
-        <img src = "/images/Redvelvet Cookies.jpg" alt = "Redvelvet Cookies" class="card-img" />
-      <h2>'Red Velvet' Cookies</h2>
-      <p><strong>Red Velvet Cookie</strong> — A fashionable and elegant choice, just like [Y/N]</p>
-      <p>
-      <button class="button"><a class="button-link" href="/recipes/redvelvetcookie_recipe.html">See the recipe </a></button>
-      </p>
-    </section>
-
-</div>
-
-<div class="cookie-reveal">
-       <section class="card">
-        <img src = "/images/Dark_ Cookies.jpg" alt = "Dark Cookies" class="card-img" />
-      <h2>'Dark and Rich' Cookies</h2>
-      <p><strong>Triple Chocolate Cookie</strong> — A rich, chocolatey cookie with a deep, intense flavor.</p>
-      <p>
-      <button class="button"><a class="button-link" href="/recipes/darkcookie_recipe.html">See the recipe </a></button>
-      </p>
-    </section>
- </div>
-    
- <div class="cookie-reveal">
-       <section class="card">
-        <img src = "/images/bittersuprise_cookie.jpg" alt = "Bittersuprise Cookie" class="card-img" />
-      <h2>'Bittersuprise' Cookies</h2>
-      <p><strong>Bittersuprise Cookie</strong> — Odinary on the first glance, but suprising within the first bite.</p>
-      <p>
-       <button class="button"><a class="button-link" href="/recipes/bittersuprisecookie_recipe.html">See the recipe</a></button>
-      </p>
-    </section>
-    <div>
-
-
-
-
-    <p>This page is a placeholder.</p>
   </main>
-<footer>
+
+  <!-- ── FOOTER ── -->
+  <footer>
     <div class="container footer-row">
-      <div class="small">© <span id="year"></span> Patience Franklin</div>
-        <div class="footer-links"><a href="impressum.html">Imprint</a>
-        <span class="small"> · </span>
+      <span>© <span id="year"></span> Patience Franklin</span>
+      <div class="footer-links">
+        <a href="impressum.html">Imprint</a>
+        <span class="footer-sep">·</span>
         <a href="contact.html">Contact</a>
-        <span class="small"> · </span>
+        <span class="footer-sep">·</span>
         <a href="datenschutz.html">Privacy Policy</a>
-        
       </div>
     </div>
   </footer>
@@ -148,7 +172,19 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
-  <script src="script.js"></script>
+  <script>
+    // Staggered scroll reveal for cookie cards
+    const cards = document.querySelectorAll('.cookie-reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('active'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => observer.observe(card));
+  </script>
 
 </body>
 </html>

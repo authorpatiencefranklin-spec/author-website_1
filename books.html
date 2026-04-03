@@ -3,72 +3,160 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Books 📖  Patience Franklin</title>
+  <title>Books 📖 Patience Franklin</title>
+  <meta name="description" content="Explore the books of romance author Patience Franklin." />
   <link rel="stylesheet" href="style.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- ── NAVIGATION ── -->
   <header>
-
-    <div class="container">
     <nav>
-  <ul class="nav">
-    <li><a href="index.html">Home</a></li>
-     <span class="small"> | </span>
-    <li><a href="books.html">Books</a></li>
-     <span class="small"> | </span>
-    <li><a href="about.html">About</a></li>
-     <span class="small"> | </span>
-
-    <li class="dropdown">
-      <a href="#">Cookies</a>
-      <ul class="submenu">
-         <li><a href="https://patiencefranklin.com/cookies.html">All Cookies</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/oreo3B_recipe.html">B-B-Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/MandM_recipe.html">M & M-Cookie</a></li>
-        <li> <a href="https://patiencefranklin.com/recipes/bittersuprise_recipe.html">Bittersuprise Cookie</a> </li>
-        <li><a href="https://patiencefranklin.com/recipes/snickerdoodle_recipe.html">Snickerdoodle Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/peanutbutter_recipe.html">Peanut Butter Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/redvelvetcookie_recipe.html">Red Velvet Cookie</a></li>
-        <li><a href="https://patiencefranklin.com/recipes/darkcookie_recipe.html">Triple Chocolate Cookie</a></li>
+      <a href="index.html" class="nav-brand">
+        <img src="images/Logo_Update.png" alt="Patience Franklin" />
+      </a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#">Cookies</a>
+          <ul class="submenu">
+            <li><a href="cookies.html">All Cookies</a></li>
+            <li><a href="/recipes/oreo3B_recipe.html">B-B-Cookie</a></li>
+            <li><a href="/recipes/MandM_recipe.html">M &amp; M-Cookie</a></li>
+            <li><a href="/recipes/bittersuprise_recipe.html">Bittersurprise Cookie</a></li>
+            <li><a href="/recipes/snickerdoodle_recipe.html">Snickerdoodle Cookie</a></li>
+            <li><a href="/recipes/peanutbutter_recipe.html">Peanut Butter Cookie</a></li>
+            <li><a href="/recipes/redvelvetcookie_recipe.html">Red Velvet Cookie</a></li>
+            <li><a href="/recipes/darkcookie_recipe.html">Triple Chocolate Cookie</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </li>
-    <span class="small"> | </span>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-    </div>
+    </nav>
   </header>
 
-  <main class="container">
-    <h1>Books</h1>
+  <main>
 
-    <div class="card">
-      <h2>❁ Access ❁</h2>
-      <p class="small">[ The Copa Series ] · Romance · July 2026 </p>
-      <p>Short blurb (2–4 lines).</p>
-      <p>
-        <a href="#">Amazon link</a>
-        <span class="small"> · </span>
-        <a href="#">Goodreads link</a>
-      </p>
-    </div>
+    <!-- ── PAGE HERO ── -->
+    <section class="hero hero--small">
+      <span class="eyebrow">The Library</span>
+      <h1>Stories of longing, tenderness,<br><em>and becoming</em></h1>
+      <div class="section-rule section-rule--center"></div>
+      <p class="tagline">Bittersweet contemporary romance with emotional depth, quiet ache, and hard-won hope.</p>
+    </section>
 
-    <div class="card">
-      <h2>Following Book</h2>
-      <p class="small">Book 2 of [ The Copa Series ] · Romance</p>
-      <p>Short blurb.</p>
-    </div>
+    <!-- ── BOOKS LIST ── -->
+    <section class="books-section">
+      <div class="container">
+        
+        <article class="book-feature">
+          <div class="book-feature-cover">
+            <div class="book-cover-placeholder">
+              <span>Access</span>
+              <small>Patience Franklin</small>
+            </div>
+          </div>
+
+          <div class="book-feature-content">
+            <span class="eyebrow">Latest Release</span>
+            <h2>Access</h2>
+            <p class="book-meta">The Copa Series · Romance · July 2026</p>
+            <div class="section-rule"></div>
+            <p class="book-blurb">
+              A bittersweet contemporary sport-tournament romance about ambition, vulnerability,
+              and learning how to love another without abandoning yourself.
+            </p>
+
+            <div class="book-links">
+              <a href="#" class="btn btn-primary">Amazon</a>
+              <a href="#" class="btn btn-ghost">Goodreads</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-feature book-feature--alt">
+          <div class="book-feature-cover">
+            <div class="book-cover-placeholder">
+              <span>Following Book</span>
+              <small>Coming Soon</small>
+            </div>
+          </div>
+
+          <div class="book-feature-content">
+            <span class="eyebrow">Coming Soon</span>
+            <h2>Following Book</h2>
+            <p class="book-meta">Book Two of The Copa Series · Romance</p>
+            <div class="section-rule"></div>
+            <p class="book-blurb">
+              The next story in the series continues with new emotional stakes, impossible choices,
+              and a love that asks more than either of them expected to give.
+            </p>
+
+            <a href="contact.html" class="link-arrow">Stay updated</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── NEWSLETTER ── -->
+    <section class="newsletter-section">
+      <div class="container newsletter-inner">
+        <span class="eyebrow">Stay in touch</span>
+        <h2>Letters from my desk</h2>
+        <div class="section-rule section-rule--center"></div>
+        <p>New releases, bonus scenes, behind-the-scenes, and the occasional love letter about books.</p>
+
+        <form
+          class="newsletter-form"
+          action="https://assets.mailerlite.com/jsonp/2152736/forms/181019601069410233/subscribe"
+          method="post"
+        >
+          <label class="sr-only" for="ml-email-books">Email address</label>
+          <input
+            id="ml-email-books"
+            type="email"
+            name="fields[email]"
+            placeholder="your@email.com"
+            autocomplete="email"
+            required
+          />
+          <input type="hidden" name="ml-submit" value="1" />
+          <input type="hidden" name="anticsrf" value="true" />
+          <input type="hidden" name="redirect" value="https://patiencefranklin.com/thanks.html" />
+          <button type="submit">Subscribe</button>
+        </form>
+
+        <p class="newsletter-hint">
+          No spam. Unsubscribe anytime. By subscribing you agree to receive emails from me — see my
+          <a href="datenschutz.html" class="newsletter-policy-link">Privacy Policy</a>.
+        </p>
+      </div>
+    </section>
+
   </main>
 
+  <!-- ── FOOTER ── -->
   <footer>
     <div class="container footer-row">
-      <div class="small">© <span id="year"></span> Patience Franklin</div>
-        <div class="footer-links"><a href="impressum.html">Imprint</a>
-        <span class="small"> · </span>
+      <span>© <span id="year"></span> Patience Franklin</span>
+      <div class="footer-links">
+        <a href="impressum.html">Imprint</a>
+        <span class="footer-sep">·</span>
         <a href="contact.html">Contact</a>
-        <span class="small"> · </span>
+        <span class="footer-sep">·</span>
         <a href="datenschutz.html">Privacy Policy</a>
-        
       </div>
     </div>
   </footer>
@@ -76,5 +164,21 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
+  <script>
+    document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = this;
+      const formData = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      }).then(() => {
+        window.location.href = "/thanks.html";
+      });
+    });
+  </script>
+
 </body>
 </html>
